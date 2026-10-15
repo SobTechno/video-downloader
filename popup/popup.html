@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobtechno Video Downloader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      </div>
+      <div>
+        <h1>دانلودر ویدیو</h1>
+        <p>Sobtechno</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <button class="switch" id="power" role="switch" aria-checked="true" aria-label="اسکن ویدیو"><span></span></button>
+      <button class="icon-btn" id="menuBtn" aria-label="منو" aria-haspopup="true" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><circle cx="12" cy="5" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="12" cy="19" r="1.8"/></svg>
+      </button>
+    </div>
+    <div class="menu" id="menu" hidden>
+      <button id="clearBtn">پاک کردن لیست</button>
+      <button id="helpBtn">راهنما</button>
+      <button id="aboutBtn">درباره</button>
+    </div>
+  </header>
+
+  <div class="status" id="status"></div>
+  <main id="list" aria-live="polite"></main>
+
+  <div class="sheet" id="sheet" hidden>
+    <h2 id="sheetTitle"></h2>
+    <div id="sheetText"></div>
+    <button class="btn-text" id="sheetClose">بستن</button>
+  </div>
+
+  <footer>
+    <span>ساخته‌شده توسط <a href="https://github.com/Sobtechno" target="_blank" rel="noopener">Sobtechno</a></span>
+    <span dir="ltr">v4.0.0</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
